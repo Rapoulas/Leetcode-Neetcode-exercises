@@ -24,7 +24,7 @@ def longestConsecutive(nums: List[int]) -> int:
     numSet = set(nums)
     longest = 0
 
-    for n in nums:
+    for n in numSet:
         if (n-1) not in numSet:
             length = 0
             while (n + length) in numSet:
